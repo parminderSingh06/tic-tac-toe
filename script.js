@@ -13,12 +13,17 @@ const gameBoard = (() => {
     const squares = document.querySelectorAll('.squares');
     for(let i = 0; i < squares.length; i++) {
         squares[i].addEventListener('click', () =>{
-            squares[i].innerHTML = player.character;
+            squares[i].innerHTML = player1.character;
         });
     }
  })();
 
  const displayController = (() => {
+    const player1 = player('X');
+    const player2 = player('O');
+    function turn() {
+
+    }
  })();
 
 const player = (character) => {
